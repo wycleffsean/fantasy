@@ -1,4 +1,8 @@
 module ApplyTest
+  def self.included(klass)
+    klass.include(FunctorTest)
+  end
+
   def test_apply_composition
     f = ->(val) { 2 * val }
     g = ->(val) { 1 + val }
