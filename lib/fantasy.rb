@@ -1,5 +1,8 @@
 require "fantasy/version"
+require "fantasy/id"
 
 module Fantasy
-  # Your code goes here...
+  def self.identity
+    ->(val) { val }
+  end
 end
